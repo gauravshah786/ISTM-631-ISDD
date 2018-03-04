@@ -1,0 +1,282 @@
+body {
+	background:#fff;
+	color:#666;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-size:1em;
+	font-weight:normal;
+	line-height:1.4em;
+	margin: 0;
+}
+
+h1 {
+	color:#333;
+	font-family:'Anton', sans-serif;
+	font-weight:normal;
+	line-height:1.5em;
+	margin:.45em 0;
+	padding:0;
+}
+
+/* links */
+a, a:active, a:hover {
+	color:#0099ff;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+* {
+	box-sizing:border-box;
+}
+
+/* structure */
+.wrapper {
+	margin: 0 auto;
+	width: 92%;
+}
+
+header {
+	padding: 15px 0;
+}
+
+#banner {
+	text-align: center;
+}
+
+#hero, #page-header{
+	border-top:1px solid #e2e2e2;
+	background: #38c2ec66;
+	border-bottom:1px solid #e2e2e2;
+	padding:20px 0;
+}
+
+#hero h1 {
+	line-height: 1.2em;
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+
+#content {
+	margin:40px 0;
+}
+
+p {
+	margin:0 0 1.5em;
+}
+
+.normalize-font {
+	font-family: sans-serif;
+}
+
+/* RESPONSIVE IMAGES */
+img {
+	height:auto;
+	max-width:100%;
+}
+
+/*MAIN MENU*/
+.menu-toggle {
+	background:#666;
+	color:#fff;
+	cursor:pointer;
+	display:block;
+	font-size:20px;
+	margin:20px 0 0;
+	padding:10px;
+	text-transform:uppercase;
+	font-family: 'Varela Round', sans-serif;
+}
+
+.srt-menu {
+	display:none;
+}
+
+.srt-menu {
+	clear:both;
+	margin-bottom:30px;
+}
+
+.srt-menu li a {
+	background:#dadada;
+	display:block;
+	font-family: 'Varela Round', sans-serif;
+	margin:1px 0;
+	padding:10px;
+	text-decoration:none;
+}
+
+/*SPACE GRID ELEMENTS VERTICALLY, SINCE THEY ARE ONE UNDER ANOTHER SO FAR*/
+.grid_3,
+.grid_5,
+.grid_7 {
+	margin-bottom:40px;
+	min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+	position: relative;
+}
+
+/*FOOTER*/
+footer {
+	background:#333;
+	clear:both;
+	color:#ccc;
+	font-size:80%;
+	padding:20px 0;
+}
+
+#footertext {
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	text-shadow: 5px 5px 10px #000;
+}
+
+/* Contain floats*/
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after,
+.container:after,
+.row:after{
+  clear: both;
+}
+
+/*
+LARGER MOBILE DEVICES
+This is for mobile devices with a bit larger screens.
+*/
+@media only screen and (min-width: 481px) {
+	#banner {
+		float:left;
+		text-align:left;
+	}
+	.menu-toggle {
+		float:right;
+	}
+}
+
+@media (max-width: 767px) {
+	.grid_3 {
+		text-align: center;
+	}
+}
+
+/*
+TABLET & SMALLER LAPTOPS
+The average viewing window and preferred media query for those is 768px.
+But I think that some more breathing space is good:)
+*/
+@media only screen and (min-width: 920px) {
+	.wrapper {
+		margin: .5em auto;
+		max-width: 1200px;
+	}
+
+	#banner {
+		float:left;
+		text-align:left;
+		margin-bottom:0;
+	}
+
+	header {
+		padding:0;
+	}
+
+	#content {
+		float:left;
+		width:65%;
+	}
+
+	#content.wide-content{
+		float:none;
+		width:100%;
+	}
+
+	/*** MAIN MENU - ESSENTIAL STYLES ***/
+	.menu-toggle {
+		display:none;
+	}
+
+	#menu-main-navigation {
+		display:block;
+	}
+
+	.srt-menu, .srt-menu *{
+		margin:			0;
+		padding:		0;
+		list-style:		none;
+	}
+
+	.srt-menu ul {
+		position:		absolute;
+		display:none;
+		width:			12em; /* left offset of submenus need to match (see below) */
+	}
+
+	.srt-menu ul li {
+		width:			100%;
+	}
+
+	.srt-menu li {
+		float:			left;
+		position:		relative;
+		margin-left:1px;
+	}
+
+	.srt-menu a {
+		display:		block;
+		position:		relative;
+	}
+
+	/*** DEMO1 SKIN ***/
+	#topnav, .srt-menu {
+		float:right;
+		margin: 1em 0 0 0;
+	}
+
+	.srt-menu a {
+		text-decoration:none;
+	}
+
+	.srt-menu li a {
+		background:#fff;
+		height:45px;
+		margin:0;
+		padding:10px 20px;
+	}
+
+	.srt-menu li:hover > a {
+		color:#fff;
+		background:#0099ff;
+	}
+
+	/*
+	 GRID COLUMNS
+	*/
+	 .row {
+		 margin-left: -15px;
+		 margin-right: -15px;
+	}
+	.grid_3 { width: 25%; }
+	.grid_5 { width: 41.66666667%; }
+	.grid_7 { width: 58.33333333%; }
+
+	.grid_3,
+	.grid_5,
+	.grid_7 {
+		display: block;
+		float: left;
+	}
+
+	.rightfloat {
+		float:right;
+	}
+
+	#hero [class*="grid_"] { margin-bottom:-20px;}
+}
