@@ -75,6 +75,10 @@ img {
 	max-width:100%;
 }
 
+.round-corner {
+	border-radius: 15px;
+}
+
 /*MAIN MENU*/
 .menu-toggle {
 	background:#666;
@@ -122,6 +126,7 @@ footer {
 	background:#333;
 	clear:both;
 	color:#ccc;
+	font-size: 80%;
 	padding:20px 0;
 }
 
@@ -160,7 +165,7 @@ This is for mobile devices with a bit larger screens.
 	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 918px) {
 	.grid_3 {
 		text-align: center;
 	}
