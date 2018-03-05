@@ -151,6 +151,10 @@ footer {
   clear: both;
 }
 
+.grid_3 {
+	text-align: center;
+}
+
 /*
 LARGER MOBILE DEVICES
 This is for mobile devices with a bit larger screens.
@@ -164,12 +168,12 @@ This is for mobile devices with a bit larger screens.
 		float:right;
 	}
 }
-
-@media (max-width: 918px) {
+/* to center align the images on small screens */
+/* @media (max-width: 918px) {
 	.grid_3 {
 		text-align: center;
 	}
-}
+} */
 
 /*
 TABLET & SMALLER LAPTOPS
